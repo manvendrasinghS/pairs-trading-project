@@ -1,0 +1,8 @@
+numpy
+pandas
+yfinance
+matplotlib
+statsmodels
+scipy
+pytest
+# jupyter    # for the write-up notebook (install separately; large dependency tree)

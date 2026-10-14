@@ -1,0 +1,66 @@
+Loaded cached walk-forward plan (25 rolls) <- data/walk_forward_plan.pkl
+==============================================================================
+BLOCK 3 — Walk-forward out-of-sample backtest
+==============================================================================
+  formation=504d  trading=126d  step=126d  top_k=5
+  costs: 5.0bp one-way, 50.0bp/yr borrow
+  rule : entry=2.0 exit=0.5 stop=4.0 max_hold=60d   z-score=frozen
+
+  roll  0 | 2014-01-06 -> 2014-07-07 | tested 435, sig  22, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   0.17
+  roll  1 | 2014-07-08 -> 2015-01-05 | tested 435, sig  23, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.15
+  roll  2 | 2015-01-06 -> 2015-07-07 | tested 435, sig  39, traded 5 | cointegration held OOS for 1/5 | OOS Sharpe   0.93
+  roll  3 | 2015-07-08 -> 2016-01-05 | tested 435, sig  58, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.11
+  roll  4 | 2016-01-06 -> 2016-07-06 | tested 435, sig  48, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.69
+  roll  5 | 2016-07-07 -> 2017-01-04 | tested 435, sig  14, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.84
+  roll  6 | 2017-01-05 -> 2017-07-06 | tested 435, sig   9, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.77
+  roll  7 | 2017-07-07 -> 2018-01-04 | tested 435, sig  10, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.48
+  roll  8 | 2018-01-05 -> 2018-07-06 | tested 435, sig  54, traded 5 | cointegration held OOS for 1/5 | OOS Sharpe  -1.57
+  roll  9 | 2018-07-09 -> 2019-01-07 | tested 435, sig  16, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   0.38
+  roll 10 | 2019-01-08 -> 2019-07-09 | tested 435, sig  36, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.99
+  roll 11 | 2019-07-10 -> 2020-01-07 | tested 435, sig  25, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   2.50
+  roll 12 | 2020-01-08 -> 2020-07-08 | tested 435, sig  34, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -2.22
+  roll 13 | 2020-07-09 -> 2021-01-06 | tested 435, sig  26, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.99
+  roll 14 | 2021-01-07 -> 2021-07-08 | tested 435, sig  54, traded 5 | cointegration held OOS for 2/5 | OOS Sharpe  -2.43
+  roll 15 | 2021-07-09 -> 2022-01-05 | tested 435, sig  39, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.46
+  roll 16 | 2022-01-06 -> 2022-07-08 | tested 435, sig  37, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -0.50
+  roll 17 | 2022-07-11 -> 2023-01-06 | tested 435, sig  56, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   0.25
+  roll 18 | 2023-01-09 -> 2023-07-11 | tested 435, sig  18, traded 2 | cointegration held OOS for 0/2 | OOS Sharpe  -1.88
+  roll 19 | 2023-07-12 -> 2024-01-09 | tested 435, sig  14, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.13
+  roll 20 | 2024-01-10 -> 2024-07-11 | tested 435, sig  69, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.83
+  roll 21 | 2024-07-12 -> 2025-01-10 | tested 435, sig  41, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   1.13
+  roll 22 | 2025-01-13 -> 2025-07-15 | tested 435, sig  41, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe  -1.27
+  roll 23 | 2025-07-16 -> 2026-01-13 | tested 435, sig  70, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   2.50
+  roll 24 | 2026-01-14 -> 2026-07-16 | tested 435, sig  47, traded 5 | cointegration held OOS for 0/5 | OOS Sharpe   0.27
+
+  OUT-OF-SAMPLE PORTFOLIO (net of costs)
+    days=3150  ann.return= -0.56%  ann.vol= 4.15%
+    Sharpe= -0.11  Sortino= -0.13  maxDD=-17.94%  Calmar=-0.03
+    hit rate=49.7%  skew= 0.26  kurtosis=17.29  worst day=-2.27%
+
+  IN-SAMPLE vs OUT-OF-SAMPLE (per selected pair, Sharpe)
+    mean IS  Sharpe :   1.54
+    mean OOS Sharpe :  -0.11
+    decay           :   1.65 Sharpe points
+
+  COINTEGRATION SURVIVAL: 3.3% of selected pairs were still
+    cointegrated (p<=0.05) in the following trading window.
+
+  BENCHMARK: SPY buy-and-hold, same period
+    days=3150  ann.return= 13.86%  ann.vol=17.20%
+    Sharpe=  0.84  Sortino=  1.03  maxDD=-33.72%  Calmar= 0.41
+    hit rate=55.2%  skew=-0.31  kurtosis=17.34  worst day=-10.94%
+    correlation of strategy to SPY: +0.042
+==============================================================================
+
+Saved OOS returns, pair records, roll records and trades -> data/
+
+==============================================================================
+COST SENSITIVITY — where does the edge break even?
+==============================================================================
+ one_way_bps  ann_return  sharpe  max_drawdown
+      0.0000     -0.0028 -0.0458       -0.1653
+      2.5000     -0.0042 -0.0799       -0.1692
+      5.0000     -0.0056 -0.1142       -0.1794
+     10.0000     -0.0084 -0.1825       -0.1995
+     20.0000     -0.0140 -0.3191       -0.2381
+==============================================================================
